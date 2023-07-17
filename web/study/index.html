@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/index.css">
 </head>
+
 <body>
     <!-- 头部区域 -->
     <div class="head">
@@ -31,18 +33,45 @@
                 </ul>
             </div>
             <!-- 搜索 -->
+            <!-- 标签结构：input + a/button -->
             <div class="search">
-                <div class="text">
-                    <input type="text" style="border: 0px;" placeholder="输入关键字">
-                </div>
-                <div class="img">
-                    <img src="./images/search.png" alt="">
-                </div>
+                <input type="text" placeholder="请输入关键字">
+                <a href="#"></a>
             </div>
             <!-- 用户 -->
-            <div class="user">4</div>
+            <!-- 标签结构：a > img +span -->
+            <div class="user">
+                <a href="#">
+                    <img src="./uploads/user.png" alt="">
+                    <span>测试用户1</span>
+                </a>
+            </div>
         </div>
     </div>
-    
+
+    <!-- banner 区域 -->
+    <div class="banner">
+        <div class="wrapper">
+            <div class="left">
+                <ul>
+                    <li><a href="#">前端开发</a></li>
+                    <li><a href="#">后端开发</a></li>
+                    <li><a href="#">移动开发</a></li>
+                    <li><a href="#">大数据</a></li>
+                    <li><a href="#">人工智能</a></li>
+                    <li><a href="#">运维&测试</a></li>
+                    <li><a href="#">C++</a></li>
+                    <li><a href="#">云计算</a></li>
+                    <li><a href="#">UI设计</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <h3>我的课程表</h3>
+                <div class="content"></div>
+            </div>
+        </div>
+    </div>
+
 </body>
+
 </html>
