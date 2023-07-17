@@ -138,6 +138,7 @@ body {
 }
 
 .banner .left a {
+     /* 块级：宽度自动是父级的100% */
     display: block;
     height: 46px;
     line-height: 46px;
@@ -152,6 +153,62 @@ body {
 }
 
 .banner .right {
+    margin-top: 60px;
     width: 218px;
 	height: 305px;
-} 
+    background-color: #209dd5;
+    border-radius: 10px;
+}
+
+.banner .right h3 {
+    margin-left: 14px;
+    line-height: 48px;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.banner .right .content {
+    padding: 14px;
+    height: 258px;
+    background-color: #fff;
+}
+
+.banner .right .content dl {
+    margin-bottom: 12px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.banner .right .content dt {
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.banner .right .content dd {
+    margin-bottom: 8px;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.banner .right .content span {
+    color: #209dd5;
+}
+
+.banner .right .content strong {
+    color: #7d7d7d;
+    font-weight: 400;
+}
+
+.banner .right .content a {
+    display: block;
+    height: 32px;
+    background-color: #00a4ff;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    line-height: 32px;
+    border-radius: 15px;
+    
+}
