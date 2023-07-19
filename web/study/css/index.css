@@ -212,3 +212,109 @@ body {
     border-radius: 15px;
     
 }
+
+/* 推荐 */
+
+.recommond {
+    display: flex;
+    margin-top: 11px;
+    padding: 18px 20px;
+    height: 60px;
+    background-color: #fff;	
+    /* x轴偏移量、y轴偏移量、 模糊程度、扩散程度*/
+    box-shadow: 0px 5px 3px 0px rgba(211, 211, 211, 0.5);
+}
+
+.recommond h3 {
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #00a4ff;
+}
+
+.recommond ul {
+    display: flex;
+    flex: 1;
+    
+}
+
+.recommond ul li a {
+    padding: 0 24px;
+    font-size: 18px;
+    border-right: 1px solid #e0e0e0;
+}
+
+.recommond ul li:last-child a {
+    border: 0;
+}
+
+.recommond .modify {
+    font-size: 16px;
+    color: #00a4ff;
+}
+
+
+/* 精品课程区域 */
+
+.course {
+    margin-top: 15px;
+    height: 600px;
+}
+
+.hd {
+    display: flex;
+    justify-content: space-between;
+    line-height: 60px;
+    font-size: 21px;
+}
+
+.hd .more {
+    padding-right: 20px;
+    background: url(../images/more.png) no-repeat right center;
+    font-size: 14px;
+    color: #999;
+}
+
+.course .bd ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.course .bd ul li {
+    margin-bottom: 14px;
+    width: 228px;
+    height: 271px;
+    background-color: #fff;
+
+}
+
+.course .bd .pic {
+    height: 156px;
+}
+
+.course .bd .text {
+    padding: 20px;
+    font-size: 14px;
+}
+
+.course .bd .text h4  {
+    margin-bottom: 11px;
+    height: 40px;
+    line-height: 20px;
+}
+
+.course .bd .text p {
+    text-align: center;
+    line-height: 24px;
+    color: #999;
+}
+
+.course .bd .text span {
+    color: #fa6400;
+}
+
+.course .bd .text i {
+    font-style: normal;
+}
+
