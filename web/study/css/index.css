@@ -258,13 +258,16 @@ body {
 
 .course {
     margin-top: 15px;
-    height: 600px;
+    /* height: 600px; */
 }
 
+
+/* 标题 - 公共类，与其他区域共用 */
 .hd {
     display: flex;
     justify-content: space-between;
     line-height: 60px;
+    height: 60px;
     font-size: 21px;
 }
 
@@ -275,13 +278,13 @@ body {
     color: #999;
 }
 
-.course .bd ul {
+.bd ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.course .bd ul li {
+.bd ul li {
     margin-bottom: 14px;
     width: 228px;
     height: 271px;
@@ -289,32 +292,61 @@ body {
 
 }
 
-.course .bd .pic {
+.bd .pic {
     height: 156px;
 }
 
-.course .bd .text {
+.bd .text {
     padding: 20px;
     font-size: 14px;
 }
 
-.course .bd .text h4  {
+.bd .text h4  {
     margin-bottom: 11px;
     height: 40px;
     line-height: 20px;
 }
 
-.course .bd .text p {
+.bd .text p {
     text-align: center;
     line-height: 24px;
     color: #999;
 }
 
-.course .bd .text span {
+.bd .text span {
     color: #fa6400;
 }
 
-.course .bd .text i {
+.bd .text i {
     font-style: normal;
+}
+
+/* 前端 */
+.hd ul {
+    display: flex;
+}
+
+.hd li {
+    margin-right: 60px;
+    font-size: 16px;
+}
+
+.hd li .active {
+    color: #00a4ff;
+}
+
+.bd {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bd .left {
+    width: 228px;
+	height: 386px;
+}
+
+.bd .right .top {
+    margin-bottom: 15px;
+    height: 100px;
 }
 
