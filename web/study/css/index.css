@@ -350,3 +350,42 @@ body {
     height: 100px;
 }
 
+/* 版权 */
+
+.footer {
+    margin-top: 60px;
+    height: 273px;
+    background-color: #fff;
+}
+
+.footer .wrapper {
+    display: flex;
+    padding: 60px 0;
+    justify-content: space-between;
+}
+
+.footer .left p{
+    margin-top: 24px;
+    margin-bottom: 14px;
+    width: 440px;
+    line-height: 17px;
+    font-size: 12px;;
+    color: #666;
+}
+
+.footer .left .download {
+    display: block;
+    width: 120px;
+    height: 36px;
+    border: 1px solid #00a4ff;
+    text-align: center;
+    line-height: 34px;
+    font-size: 16px;
+    color: #00a4ff;
+}
+
+.footer .right dt {
+    line-height: 23px;
+    font-size: 16px;
+}
+
