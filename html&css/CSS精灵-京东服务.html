@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS精灵-京东服务</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    .service {
+        margin: 100px auto;
+        width: 1190px;
+        height: 42px;
+    }
+
+    .service ul {
+        display: flex;
+    }
+
+    .service li {
+        display: flex;
+        width: 297px;
+        height: 42px;
+    }
+
+    .service li span {
+        margin-right: 10px;
+        width: 36px;
+        height: 42px;
+        background: url(./images/sprite.png) 0 -192px;
+    }
+
+    .service li:nth-child(2) span {
+        background-position: -41px -192px;
+    }
+
+    .service li:nth-child(3) span {
+        background-position: -82px -192px;
+    }
+
+    .service li:nth-child(4) span {
+        background-position: -123px -192px;
+    }
+
+    .service p {
+        line-height: 42px;
+        font-size: 18px;
+        font-weight: 700;
+        color: #444;
+    }
+</style>
+<body>
+
+    <div class="service">
+        <ul>
+            <li>
+                <span></span>
+                <p>品类齐全，轻松购物</p>
+            </li>
+            <li>
+                <span></span>
+                <p>多仓直发，极速配送</p>
+            </li>
+            <li>
+                <span></span>
+                <p>正品行货，精致服务</p>
+            </li>
+            <li>
+                <span></span>
+                <p>天天低价，畅选无忧</p>
+            </li>
+        </ul>
+    </div>
+    
+</body>
+</html>
