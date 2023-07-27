@@ -4,3 +4,135 @@
   margin: 0 auto;
   width: 1240px;
 }
+
+/* 快捷导航 */
+.shortcut {
+  height: 52px;
+  background-color: #333;
+}
+
+.shortcut .wrapper {
+  height: 52px;
+}
+
+.shortcut ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.shortcut ul a {
+  padding: 0 16px;
+  line-height: 52px;
+  border-right: 1px solid #666;
+  font-size: 14px;
+  color: #dcdcdc;
+}
+
+.shortcut li:last-child a {
+  border: none;
+}
+
+.shortcut ul li .iconfont {
+  margin-right: 4px;
+  vertical-align: bottom;
+}
+
+.shortcut ul .login {
+  color: #5EB69C;
+}
+
+/* 头部 */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px auto;
+  height: 88px;
+  /* background-color: pink; */
+}
+
+.header .logo h1 a {
+  display: block;
+  width: 202px;
+  height: 88px;
+  background-image: url(../images/logo.png);
+  font-size: 0px;
+}
+
+.header .nav {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  width: 968px;
+  height: 30px;
+}
+
+.header .nav ul {
+  display: flex;
+  margin-left: 32px;
+}
+
+.header .nav li {
+  margin-right: 48px;
+}
+
+.header .nav li a {
+  padding-bottom: 7px;
+  line-height: 30px;
+  font-size: 16px;
+}
+
+.header .nav li :hover,
+.header .nav .active {
+  border-bottom: 2px solid #5EB69C;
+  color: #5EB69C;
+}
+
+.header .nav .search {
+  display: flex;
+  width: 172px;
+  height: 30px;
+  border-bottom: 2px solid #e7e7e7;
+}
+
+.header .nav .search .iconfont {
+  margin-right: 10px;
+  line-height: 30px;
+  font-size: 18px;
+  color: #ccc;
+}
+
+.header .nav .search input {
+  /* 浏览器默认优先生效 input 标签的默认宽度 所以 flex: 1 不生效 */
+  /* 解决办法：重置 input 默认宽度 -> width: 0; */
+  flex: 1;
+  width: 0;
+}
+
+.header .nav .search input::placeholder{
+  font-size: 14px;
+  color: #ccc;
+}
+
+.header .nav .cart {
+  position: relative;
+}
+
+.header .nav .cart a {
+  margin-right: 10px;
+  font-size: 28px;
+  line-height: 30px;
+}
+
+.header .nav .cart i {
+  position: absolute;
+  padding: 0px 7px 1px 7px;
+  top: -6px;
+  left: 15px;
+  height: 20px;
+  background-color: #e26237;
+  font-size: 15px;
+  color: #fff;
+  border-radius: 10px;
+}
