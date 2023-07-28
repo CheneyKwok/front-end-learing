@@ -136,3 +136,130 @@
   color: #fff;
   border-radius: 10px;
 }
+
+
+/* 底部 */
+.footer {
+  height: 580px;
+  background-color: #f5f5f5;
+}
+
+.footer .servive {
+  padding: 60px 0;
+  height: 178px;
+  border-bottom: 2px solid #e8e8e8;
+}
+
+.footer .servive ul {
+  display: flex;
+  justify-content: space-evenly
+}
+
+.footer .servive ul li {
+  display: flex;
+}
+
+.footer .servive ul span {
+  margin-right: 20px;
+  width: 58px;
+  height: 58px;
+  background: url(../images/sprite.png);
+}
+
+.footer .servive ul li:nth-child(2) span {
+  background-position: 0 -58px;
+}
+
+
+.footer .servive ul li:nth-child(3) span {  
+  background-position: 0 -116px;
+}
+
+.footer .servive ul li:nth-child(4) span {  
+  background-position: 0 -174px;
+}
+
+.footer .servive ul p {
+  font-size: 26px;
+  line-height: 58px;
+}
+
+.footer .help {
+  display: flex;
+  justify-content: space-between;
+  height: 300px;
+}
+
+.footer .help .left {
+  display: flex;
+  width: 862px;
+  justify-content: space-between;
+}
+
+.footer .help .left dt {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.footer .help .left dd {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.footer .help .left dd a {
+  color: #969696 ;
+}
+
+.footer .help .left dd .iconfont {
+  margin-left: 5px;
+  font-size: 16px;
+  color: #5EB69C;
+}
+
+.footer .right {
+  margin-top: 60px;
+  width: 300px;
+}
+
+.footer .right ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .right img {
+  width: 120px;
+  height: 120px;
+}
+
+.footer .right p {
+  width: 120px;
+  text-align: center;
+  line-height: 32px;
+  color: #969696 ;
+}
+
+.footer .copyright {
+  margin: 0 auto;
+  width: 660px;
+  height: 60px;
+  font-size: 16px;
+}
+
+.footer .copyright p {
+  color: #A1A1A1;
+}
+
+.footer .copyright p:first-child {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .copyright p:first-child a {
+  color: #A1A1A1;
+}
+
+.footer .copyright p:last-child {
+  margin-top: 10px;
+  text-align: center;
+}
