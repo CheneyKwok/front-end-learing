@@ -13,8 +13,7 @@ body {
 }
 
 /* 去除列表默认样式 */
-ul,
-ol {
+li {
   list-style: none;
 }
 
