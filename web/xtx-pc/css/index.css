@@ -324,3 +324,79 @@
   background-color: #00BE9A;
   color: #fff;
 }
+
+/* 最新专题 */
+
+.topic-bd ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.topic-bd .pic {
+  position: relative;
+  width: 405px;
+  height: 288px;
+}
+
+.topic-bd .cover {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 405px;
+  background-image: linear-gradient(180deg, rgba(137,137,137,0.00) 0%, rgba(0,0,0,0.90) 100%);
+
+}
+
+.topic-bd .cover .cover-txt h4 {
+  font-size: 20px;
+  color: #fff;
+}
+
+.topic-bd .cover .cover-txt p {
+  color: #fff;
+}
+
+.topic-bd .cover .price {
+  padding: 0 7px;
+  height: 25px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 25px;
+  font-size: 15px;
+  color: #AA2113;
+}
+.topic-bd .cover .price span {
+  font-size: 18px;
+}
+
+.topic-bd .txt {
+  margin-bottom: 40px;
+  padding: 0 15px;
+  width: 405px;
+  height: 67px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #666;
+}
+
+.topic-bd .txt-left {
+  display: flex;
+}
+
+.topic-bd .txt .favorites {
+  margin-right: 20px;
+}
+
+.topic-bd ul li:nth-child(1) .favorites .iconfont {
+  color: #AA2113;
+}
+
+.topic-bd .txt-right a {
+  color: #666;
+}
