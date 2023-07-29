@@ -96,3 +96,231 @@
 .banner ol .current i {
   background-color: #fff;
 }
+
+/*  新鲜好物 人气推荐 热门品牌 */
+/*  标题 -- 公共样式 */
+.title {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  height: 42px;
+}
+
+.title .left {
+  display: flex;
+}
+
+.title .right {
+  display: flex;
+  align-items: center;
+}
+
+.title h2 {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.title p {
+  margin-left: 35px;
+  margin-top: 16px;
+  font-size: 16px;
+  color: #a1a1a1;
+}
+
+.title .more {
+  font-size: 16px;
+  color: #a1a1a1;
+}
+
+.title .more a {
+  color: #a1a1a1;
+}
+
+/* 内容 -- 公共样式 */
+.content ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content .txt h4 {
+  height: 35px;
+  font-size: 20px;
+}
+
+.content .txt {
+  padding: 18px 25px 15px 25px;
+  width: 304px;
+  height: 100px;
+  text-align: center;
+}
+
+/* 新鲜好物 */
+.goods .content .txt {
+  background-color: #EEF9F4;
+}
+
+.goods .content .txt p {
+  font-size: 22px;
+  color: #AA2113;
+}
+
+/* 人气推荐 */
+.recommend .content .txt p {
+  font-size: 16px;
+  color: #a1a1a1;
+}
+
+/* 热门品牌 */
+.brand {
+  padding: 40px 0;
+  height: 468px;
+  background-color: #f5f5f5;
+}
+
+.brand .title {
+  position: relative;
+  margin-top: 0;
+}
+
+.brand .title .right .button {
+  position: absolute;
+  right: 0;
+  bottom: -20px;
+  display: flex;
+}
+
+.brand .title .right .button a {
+  margin-left: 12px;
+  width: 20px;
+  height: 20px;
+  background-color: #e6e6e6;
+  text-align: center;
+  line-height: 20px;
+}
+
+.brand .title .right .button .iconfont {
+  color: #fff;
+}
+
+.brand .title .right .button .next {
+  background-color: #00BE9A;
+}
+
+
+/* 生鲜 -- 公共样式 */
+.bd {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bd .left {
+  width: 248px;
+  height: 610px;
+}
+
+.bd .right {
+  width: 968px;
+  height: 610px;
+}
+
+.bd .right ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bd .right li {
+  position: relative;
+  padding: 10px 21px 0;
+  width: 242px;
+  height: 305px;
+  border: 2px solid #fff;
+  /* 隐藏 找相似 */
+  overflow: hidden;
+}
+
+.bd .right .pic {
+  width: 200px;
+  height: 180px;
+}
+
+.bd .right .info {
+  margin-top: 14px;
+  margin-bottom: 5px;
+  height: 60px;
+  line-height: 19px;
+}
+
+.bd .right .price {
+  color: #AF2F22;
+}
+
+.bd .right .price span {
+  margin-left: 5px;
+  font-size: 22px;
+}
+
+/* 产品底部绿色区域 */
+.bd .right li .cover {
+  position: absolute;
+  left: 0;
+  bottom: -78px;
+  padding: 10px 0;
+  width: 242px;
+  height: 76px;
+  background-color: #00BE9A;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+.bd .right li:hover {
+  border: 2px solid #00BE9A;
+  overflow: hidden;
+}
+
+.bd .right li:hover .cover {
+  bottom: 0;
+}
+
+.bd .right li .cover p:nth-child(1) {
+  font-size: 18px;
+  color: #fff;
+}
+
+.bd .right li .cover p:nth-child(2) {
+  margin: 3px auto 6px;
+  width: 120px;
+  border: 1px solid #fff;
+  opacity: 0.11;
+}
+
+.bd .right li .cover p:nth-child(3) {
+  font-size: 13px;
+  color: #fff;
+}
+
+.bd .right li .cover p:nth-child(3) .iconfont {
+  font-size: 12px;
+  color: #fff;
+}
+
+/* 生鲜标题 */
+.fresh .title .tab ul {
+  display: flex;
+  margin-right: 58px;
+}
+
+.fresh .title .tab ul a {
+  margin-left: 6px;
+  padding: 1px 7px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.fresh .title .tab ul li:hover a,
+.fresh .title .tab ul .active {
+  background-color: #00BE9A;
+  color: #fff;
+}
