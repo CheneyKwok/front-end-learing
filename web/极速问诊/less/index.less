@@ -1,0 +1,96 @@
+// out: ../css/
+
+@import url(./base.less);
+
+// 定义变量
+@rootSize: 37.5rem;
+
+// 头部
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 (15 / @rootSize);
+    height: (44 / @rootSize);
+
+    .back {
+        .iconfont {
+            font-size: (26 /@rootSize);
+        }
+    }
+
+    h3 {
+        font-size: (17 / @rootSize);
+        color: #000;
+    }
+
+    .note {
+        font-size: (15 / @rootSize);
+        color: #2CB5A5;
+    }
+}
+
+// banner
+.banner {
+    margin-top: (30 / @rootSize);
+    margin-bottom: (34 / @rootSize);
+    text-align: center;
+
+    img {
+        margin-bottom: (18 / @rootSize);
+        width: (240 / @rootSize);
+        height: (206 / @rootSize);
+    }
+
+    p {
+        font-size: (16 / @rootSize);
+
+        span {
+            color: #16C2A3;
+        }
+    }
+}
+
+// type 
+
+.type {
+    li {
+        margin: (15 / @rootSize);
+        padding: 0 (15 / @rootSize);
+        height: (78 / @rootSize);
+        border: 0.5px solid #EDEDEDE5;
+        border-radius: 4px;
+        a {
+            display: flex;
+            align-items: center;
+            height: (78 / @rootSize);
+        }
+
+        .pic {
+            img {
+                margin-right: (14 / @rootSize);
+                width: (40 / @rootSize);
+                height: (40 / @rootSize);
+            }
+        }
+
+        .txt {
+            flex: 1;
+            h5 {
+                margin-bottom: (4 / @rootSize);
+                font-size: (16 / @rootSize);
+                color: #3C3E42;
+            }
+            p {
+                font-size: (13 / @rootSize);
+                color: #848484;
+            }
+        }
+
+        span {
+            .iconfont {
+                font-size: (16 / @rootSize);
+            }
+        }
+    }
+}
