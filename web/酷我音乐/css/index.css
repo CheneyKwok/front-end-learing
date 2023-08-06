@@ -31,3 +31,46 @@ a {
   text-decoration: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+body {
+  background-color: #f9fafb;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4vw;
+  height: 13.33333333vw;
+  background-color: #fff;
+}
+.top .left {
+  width: 62.66666667vw;
+  height: 13.33333333vw;
+  background-image: url(../assets/head.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.top .right {
+  width: 21.33333333vw;
+  height: 8vw;
+  background-color: #ffe31b;
+  border-radius: 4vw;
+  text-align: center;
+  line-height: 8vw;
+  font-size: 3.46666667vw;
+}
+.search {
+  padding: 2.66666667vw 4vw;
+  height: 13.86666667vw;
+}
+.search .input {
+  background-color: #f2f4f5;
+  border-radius: 4.26666667vw;
+  line-height: 8.53333333vw;
+  text-align: center;
+  font-size: 3.73333333vw;
+  color: #a1a4b3;
+}
+.search .input .iconfont {
+  font-size: 3.73333333vw;
+  vertical-align: bottom;
+}
