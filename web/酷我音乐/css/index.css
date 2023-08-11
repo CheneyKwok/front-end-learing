@@ -3,15 +3,7 @@
 ::before {
   box-sizing: border-box;
 }
-body,
-ul,
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+* {
   padding: 0;
   margin: 0;
 }
@@ -23,8 +15,8 @@ body {
 img {
   vertical-align: bottom;
 }
-ul {
-  list-style-type: none;
+li {
+  list-style: none;
 }
 a {
   color: #333;
@@ -100,14 +92,80 @@ body {
 }
 .banner ol {
   position: absolute;
+  display: flex;
   left: 50%;
   bottom: 1.33333333vw;
-  display: flex;
+  transform: translateX(-50%);
+  height: 2.66666667vw;
 }
 .banner ol li {
   margin: 0 0.53333333vw;
-  display: block;
   width: 1.33333333vw;
   height: 1.33333333vw;
-  background-color: black;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+}
+.banner ol .active {
+  background-color: #fff;
+}
+.listhead {
+  display: flex;
+  margin-bottom: 2.66666667vw;
+  justify-content: space-between;
+  align-items: center;
+  height: 7.46666667vw;
+  padding: 0 4vw;
+}
+.listhead p {
+  font-size: 5.33333333vw;
+  font-weight: 700;
+  color: #262338;
+}
+.listhead .listhead-more a {
+  font-size: 3.46666667vw;
+  color: #a1a4b3;
+}
+.listhead .listhead-more a .iconfont {
+  font-size: 3.2vw;
+}
+.ranklist {
+  margin-top: 3.46666667vw;
+}
+.ranklist .rankcontent ul li {
+  margin: 0 4vw 4vw 4vw;
+  height: 28vw;
+  background-color: #fff;
+  border-radius: 4.26666667vw;
+}
+.ranklist .rankcontent ul li a {
+  display: flex;
+  align-items: center;
+}
+.ranklist .rankcontent ul li a .rankcontent-left {
+  margin-right: 5.6vw;
+  width: 28vw;
+  height: 28vw;
+}
+.ranklist .rankcontent ul li a .rankcontent-left img {
+  width: 100%;
+  height: 100%;
+  border-radius: 4.26666667vw;
+}
+.ranklist .rankcontent ul li a .rankcontent-right {
+  flex: 1;
+}
+.ranklist .rankcontent ul li a .rankcontent-right dl dt {
+  margin-bottom: 1.6vw;
+  font-size: 3.73333333vw;
+  font-weight: 500;
+  color: #262338;
+}
+.ranklist .rankcontent ul li a .rankcontent-right dl dt .iconfont {
+  font-size: 4.8vw;
+  vertical-align: bottom;
+}
+.ranklist .rankcontent ul li a .rankcontent-right dl dd {
+  margin-bottom: 0.8vw;
+  font-size: 3.2vw;
+  color: #a1a4b3;
 }
