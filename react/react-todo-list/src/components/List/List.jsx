@@ -4,10 +4,12 @@ import './List.css'
 
 class List extends Component {
     render() {
+        const {todos} = this.props
         return (
             <ul className="todo-main">
-                <Item/>
-                <Item/>
+                {
+                    todos.map(todo => <Item key = {todo.id} {...todo}/>)
+                }
             </ul>
         );
     }
