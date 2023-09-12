@@ -1,20 +1,15 @@
 import React, {Component} from 'react';
-import axios from "axios";
+import Search from "./components/Search/Search";
+import List from "./components/List/List";
 
 class App extends Component {
-
-    getStudentData = () => {
-     axios.get('http://localhost:3000/api/students')
-         .then(response => {
-             console.log(response.data)}, err => {
-             console.log('失败了', err)})
-    }
     render() {
         return (
-            <div>
-                <button onClick={this.getStudentData}>点击获取学生数据</button>
+            <div className="container">
+                <Search/>
+                <List/>
             </div>
-        );
+        )
     }
 }
 
