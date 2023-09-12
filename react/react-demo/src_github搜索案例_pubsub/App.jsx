@@ -3,6 +3,7 @@ import Search from "./components/Search/Search";
 import List from "./components/List/List";
 
 class App extends Component {
+
     render() {
         return (
             <div className="container">

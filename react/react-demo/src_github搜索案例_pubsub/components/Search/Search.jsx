@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import PubSub from "pubsub-js";
 import axios from "axios";
 
 class Search extends Component {
@@ -7,7 +8,14 @@ class Search extends Component {
         // 获取用户输入信息
        const {value: keyWord} = this.keyWordNode
         console.log('search', keyWord)
+        PubSub.publish('list-state-msg', {isFirst: false, isLoading: true})
         axios.get(`https://api.github.com/search/users?q=${keyWord}`)
+            .then(response => {
+                PubSub.publish('list-state-msg', {isLoading: false, users: response.data.items})
+            }, reason => {
+                console.error('获取失败', reason)
+                PubSub.publish('list-state-msg', {isLoading: false, err: reason.message})
+            })
     }
 
     render() {
