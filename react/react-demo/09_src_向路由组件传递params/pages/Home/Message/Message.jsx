@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
-import {Link, Route} from "react-router-dom";
+import {Link, Route, Switch} from "react-router-dom";
 import Detail from "./MessageDetail/Detail";
+import MyNavLink from "../../../components/MyNavLink";
 
 class Message extends Component {
 
@@ -17,17 +18,16 @@ class Message extends Component {
             <div>
                 <ul>
                     {this.state.messages.map(message => {
-                        const {id, title} = message
                         return (
-                            <li key={id}>
+                            <li key={message.id}>
                                 {/*<a href="/message1">{message.title}</a>;*/}
-                                <Link to={`/home/message/detail?id=${id}&title=${title}`}>{title}</Link>
+                                <Link to={`/home/message/detail/${message.id}/${message.title}`}>{message.title}</Link>
                             </li>
                         )
                     })}
                 </ul>
                 <hr/>
-                <Route path="/home/message/detail" component={Detail}/>
+                <Route path="/home/message/detail/:id/:title" component={Detail}/>
                 {/*<Detail/>*/}
             </div>
         );
