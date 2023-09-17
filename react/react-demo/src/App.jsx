@@ -1,17 +1,11 @@
 import React, {Component} from 'react';
-import {Col, Row, Button, DatePicker, ConfigProvider} from 'antd';
+import Count from './containers/Count/Count'
 
 class App extends Component {
     render() {
         return (
-
             <div>
-                <Row>
-                    <Col span={8} offset={8}>
-                        <Button type={"primary"}>按钮</Button>
-                        <DatePicker/>
-                    </Col>
-                </Row>
+                <Count/>
             </div>
         );
     }
