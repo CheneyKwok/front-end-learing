@@ -1,6 +1,7 @@
 import React from 'react';
-import {NavLink, useRoutes} from 'react-router-dom'
-import routes from "./routes";
+import {Link, Route, Routes} from 'react-router-dom'
+import Home from "./pages/Home/Home";
+import About from "./pages/About/About";
 
 function App () {
         return (
@@ -16,14 +17,17 @@ function App () {
                             <div className="list-group">
                                 {/*<a className="list-group-item" href="./about.html">About</a>*/}
                                 {/*<a className="list-group-item active" href="./home.html">Home</a>*/}
-                                <NavLink className="list-group-item" to="/about">About</NavLink>
-                                <NavLink className="list-group-item" end to="/home">Home</NavLink>
+                                <Link className="list-group-item" to="/about">About</Link>
+                                <Link className="list-group-item" to="/home">Home</Link>
                             </div>
                         </div>
                         <div className="col-xs-6">
                             <div className="panel">
                                 <div className="panel-body">
-                                    {useRoutes(routes)}
+                                    <Routes>
+                                        <Route path="/about" element={<About/>}/>
+                                        <Route path="/home" element={<Home/>}/>
+                                    </Routes>
                                 </div>
                             </div>
                         </div>
