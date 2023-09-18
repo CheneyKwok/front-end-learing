@@ -8,7 +8,7 @@ const details = [
 
 function Detail(props) {
     const {state} = useLocation()
-    console.log('Detail state', state)
+    console.log(state)
     const {id, title} = state
     const detail = details.find(detail => detail.id === id) || {}
     return (
